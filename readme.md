@@ -1,1 +1,5 @@
-This is a test readme file to check git commits are working.
+2198970T
+Charlie Thomas
+
+Web App Development 2
+Tango with Django Project
