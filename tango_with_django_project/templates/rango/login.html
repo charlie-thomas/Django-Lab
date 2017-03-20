@@ -11,7 +11,7 @@
     <form id="login_form" method="post" action="{% url 'login' %}">
 
         {% if invalid_login %}
-            <p><strong>Your username and/or password were incorrect!</strong></p>
+            <p><strong>Invalid login details supplied.</strong></p>
         {% elif disabled %}
             <p><strong>Your Rango account is currently disabled.</strong></p>
         {% endif %}
