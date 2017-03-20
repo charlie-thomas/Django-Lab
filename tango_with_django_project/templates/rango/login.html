@@ -9,18 +9,18 @@
     <h1>Login to Rango</h1>
 
     <form id="login_form" method="post" action="{% url 'login' %}">
-        
+
         {% if invalid_login %}
             <p><strong>Your username and/or password were incorrect!</strong></p>
         {% elif disabled %}
             <p><strong>Your Rango account is currently disabled.</strong></p>
         {% endif %}
-        
+
         {% csrf_token %}
-        Username: <input type="text" name="username" value="" size="50" />
+        Username: <input id="id_username" maxlength="50" name="username" type="text" required>
         <br />
-        Password: <input type="password" name="password" value="" size="50" />
+        Password: <input id="id_password" name="password" type="password" required>
         <br />
-        <input type="submit" value="submit" />
+        <input type="submit" value="submit">
     </form>
 {% endblock %}
